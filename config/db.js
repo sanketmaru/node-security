@@ -25,7 +25,9 @@ module.exports = {
 			"host" : "localhost:9000",
 			"database" : "testsecurity"
 		},
-	}
+	},
+
+	"dbClient" : "mysql"
 
 };
 
