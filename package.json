@@ -1,0 +1,13 @@
+{
+    "name": "node-security",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node server",
+    },
+    "dependencies": {
+        "configise": "~0.1.0",
+        "express": "3.4.x",
+       "passport": "0.2.1"
+    }
+}
