@@ -1,23 +1,32 @@
 {
-    "name": "node-security",
-    "version": "0.0.1",
-    "description": "node security module",
-    "homepage": "https://github.com/sanketmaru/node-security",
-    "author": {
-        "name": "Webonise Lab",
-        "email": "sanketmaru@gmail.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/sanketmaru/node-security.git"
-    },
-    "scripts": {
-        "start": "node server"
-    },
-    "dependencies": {
-        "configise": "~0.1.0",
-        "express": "3.4.x",
-        "passport": "0.2.1",
-        "mysql" : "2.5.0"
-    }
+  "name": "nodesecurity",
+  "version": "0.0.1",
+  "description": "node security module",
+  "homepage": "https://github.com/sanketmaru/node-security",
+  "author": "Webonise Lab <sanketmaru@gmail.com>",
+  "main": "lib/index",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sanketmaru/node-security.git"
+  },
+  "scripts": {
+    "start": "node server"
+  },
+  "dependencies": {
+    "express": "3.4.x",
+    "mysql": "2.5.0"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/sanketmaru/node-security/issues"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "security",
+    "authentication",
+    "authorization"
+  ],
+  "license": "ISC"
 }
