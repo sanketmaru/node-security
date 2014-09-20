@@ -3,6 +3,7 @@ module.exports = {
 		"/login/*" : "ADMIN,USER",
 		"/dashboard/user" : "USER",
 		"/dashboard/admin" : "ADMIN",
+		"/radical" : "ADMIN"
 	}
 };
 

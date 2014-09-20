@@ -3,10 +3,10 @@ module.exports = {
 	"mysql" : {
 		"databaseConfig" : {
 			"user" : "root",
-			"password" : "sql",
-			"host" : "localhost:9000/testsecurity",
-			"database" : "testsecurity"
-		},
+			"password" : "root",
+			"host" : "localhost",
+			"database" : "test_db"
+		}
 	},
 
 	"mongodb" : {
@@ -15,7 +15,7 @@ module.exports = {
 			"password" : "sql",
 			"host" : "localhost:9000",
 			"database" : "testsecurity"
-		},
+		}
 	},
 
 	"redis" : {
@@ -24,10 +24,10 @@ module.exports = {
 			"password" : "sql",
 			"host" : "localhost:9000",
 			"database" : "testsecurity"
-		},
+		}
 	},
 
-	"dbClient" : "mysql"
+	"dbClient" : "mysqlClient"
 
 };
 

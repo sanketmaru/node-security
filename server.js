@@ -6,27 +6,14 @@ var app = express();
 app.use(express.cookieParser());
 app.use(express.session({secret: '1234567890QWERTY'}));
 
-app.get('/login', function(req, res) {
-    console.log(JSON.stringify(newMod));
-	newMod.validate();
-	console.log(newMod);
-    if(req.session.lastPage) {
-        res.send('Last page was: ' + req.session.lastPage + '. ');
-        req.session.lastPage = '/awesome';
-    } else {
-        res.send('Your Awesome. ');
-        req.session.lastPage = '/awesome';
-    }
-
+app.get('/login', newMod.validate,function(req, res) {
+    res.redirect('/radical')
 });
 
-app.get('/radical', function(req, res) {
-    if(req.session.lastPage) {
+app.get('/radical',newMod.checkUserRole, function(req, res) {
+    if(req.session.userId) {
         res.send('Last page was: ' + req.session.lastPage + '. ');
     } else {
-        res.setHeader('Basic realm="Retry left 5 times"');
-        console.log('login failed. wrong username or password.');
-        res.send(401);
     }
 });
 app.get('/tubular', function(req, res) {
