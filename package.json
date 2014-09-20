@@ -1,13 +1,23 @@
 {
     "name": "node-security",
     "version": "0.0.1",
-    "private": true,
+    "description": "node security module",
+    "version": "0.1.0",
+    "homepage": "https://github.com/sanketmaru/node-security",
+    "author": {
+        "name": "Webonise Lab",
+        "email": "sanketmaru@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/sanketmaru/node-security.git"
+    },
     "scripts": {
-        "start": "node server",
+        "start": "node server"
     },
     "dependencies": {
         "configise": "~0.1.0",
         "express": "3.4.x",
-       "passport": "0.2.1"
+        "passport": "0.2.1"
     }
 }
