@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/bin/npm', 'adduser' ]
+2 info using npm@2.0.0
+3 info using node@v0.10.31
+4 verbose node symlink /usr/bin/node
+5 verbose adduser before first PUT { name: 'sanketmaru',
+5 verbose adduser   password: 'XXXXX',
+5 verbose adduser   email: 'sanketmaru@gmail.com',
+5 verbose adduser   _id: 'org.couchdb.user:sanketmaru',
+5 verbose adduser   type: 'user',
+5 verbose adduser   roles: [],
+5 verbose adduser   date: '2014-09-20T14:47:43.117Z' }
+6 verbose request on initialization, where is /-/user/org.couchdb.user:sanketmaru
+7 verbose request after pass 1, where is /-/user/org.couchdb.user:sanketmaru
+8 verbose request url raw /-/user/org.couchdb.user:sanketmaru
+9 verbose request resolving registry [ 'https://registry.npmjs.org/',
+9 verbose request   './-/user/org.couchdb.user:sanketmaru' ]
+10 verbose request after pass 2, where is https://registry.npmjs.org/-/user/org.couchdb.user:sanketmaru
+11 verbose request new user, so can't send auth
+12 info attempt registry request try #1 at 20:17:43
+13 verbose request id 8dc03e904ba77049
+14 http request PUT https://registry.npmjs.org/-/user/org.couchdb.user:sanketmaru
+15 http 409 https://registry.npmjs.org/-/user/org.couchdb.user:sanketmaru
+16 verbose headers { date: 'Sat, 20 Sep 2014 14:47:40 GMT',
+16 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+16 verbose headers   'content-type': 'application/json',
+16 verbose headers   'cache-control': 'max-age=60',
+16 verbose headers   'content-length': '58',
+16 verbose headers   'accept-ranges': 'bytes',
+16 verbose headers   via: '1.1 varnish',
+16 verbose headers   'x-served-by': 'cache-syd1622-SYD',
+16 verbose headers   'x-cache': 'MISS',
+16 verbose headers   'x-cache-hits': '0',
+16 verbose headers   'x-timer': 'S1411224460.588274,VS0,VE181',
+16 verbose headers   'keep-alive': 'timeout=10, max=50',
+16 verbose headers   connection: 'Keep-Alive' }
+17 verbose adduser update existing user
+18 verbose request on initialization, where is /-/user/org.couchdb.user:sanketmaru
+19 verbose request after pass 1, where is /-/user/org.couchdb.user:sanketmaru?write=true
+20 verbose request url raw /-/user/org.couchdb.user:sanketmaru?write=true
+21 verbose request resolving registry [ 'https://registry.npmjs.org/',
+21 verbose request   './-/user/org.couchdb.user:sanketmaru?write=true' ]
+22 verbose request after pass 2, where is https://registry.npmjs.org/-/user/org.couchdb.user:sanketmaru?write=true
+23 verbose request new user, so can't send auth
+24 info attempt registry request try #1 at 20:17:45
+25 http request GET https://registry.npmjs.org/-/user/org.couchdb.user:sanketmaru?write=true
+26 http 200 https://registry.npmjs.org/-/user/org.couchdb.user:sanketmaru?write=true
+27 verbose adduser userobj { name: 'sanketmaru',
+27 verbose adduser   password: 'XXXXX',
+27 verbose adduser   email: 'sanketmaru@gmail.com',
+27 verbose adduser   _id: 'org.couchdb.user:sanketmaru',
+27 verbose adduser   type: 'user',
+27 verbose adduser   roles: [],
+27 verbose adduser   date: '2014-09-20T14:47:43.117Z' }
+28 verbose request on initialization, where is /-/user/org.couchdb.user:sanketmaru/-rev/3-8ff18bafbafd750381739ef43b28823e
+29 verbose request after pass 1, where is /-/user/org.couchdb.user:sanketmaru/-rev/3-8ff18bafbafd750381739ef43b28823e
+30 verbose request url raw /-/user/org.couchdb.user:sanketmaru/-rev/3-8ff18bafbafd750381739ef43b28823e
+31 verbose request resolving registry [ 'https://registry.npmjs.org/',
+31 verbose request   './-/user/org.couchdb.user:sanketmaru/-rev/3-8ff18bafbafd750381739ef43b28823e' ]
+32 verbose request after pass 2, where is https://registry.npmjs.org/-/user/org.couchdb.user:sanketmaru/-rev/3-8ff18bafbafd750381739ef43b28823e
+33 verbose request sending authorization for write operation
+34 info attempt registry request try #1 at 20:17:47
+35 http request PUT https://registry.npmjs.org/-/user/org.couchdb.user:sanketmaru/-rev/3-8ff18bafbafd750381739ef43b28823e
+36 http 401 https://registry.npmjs.org/-/user/org.couchdb.user:sanketmaru/-rev/3-8ff18bafbafd750381739ef43b28823e
+37 verbose headers { date: 'Sat, 20 Sep 2014 14:47:44 GMT',
+37 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+37 verbose headers   'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=60',
+37 verbose headers   'content-length': '67',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   'x-served-by': 'cache-syd1621-SYD',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1411224464.713273,VS0,VE177',
+37 verbose headers   'keep-alive': 'timeout=10, max=50',
+37 verbose headers   connection: 'Keep-Alive' }
+38 verbose stack Error: No credentials to set.
+38 verbose stack     at Conf.setCredentialsByURI (/usr/lib/node_modules/npm/node_modules/npmconf/lib/set-credentials-by-uri.js:32:11)
+38 verbose stack     at RegClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/adduser.js:112:17)
+38 verbose stack     at f (/usr/lib/node_modules/npm/node_modules/once/once.js:16:25)
+38 verbose stack     at /usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:126:10
+38 verbose stack     at f (/usr/lib/node_modules/npm/node_modules/once/once.js:16:25)
+38 verbose stack     at RegClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:277:12)
+38 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:198:65)
+38 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:236:22)
+38 verbose stack     at Request.emit (events.js:98:17)
+38 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+39 verbose cwd /home/webonise/geekhours/node-security
+40 error Linux 3.5.0-54-generic
+41 error argv "node" "/usr/bin/npm" "adduser"
+42 error node v0.10.31
+43 error npm  v2.0.0
+44 error No credentials to set.
+45 error If you need help, you may report this error at:
+45 error     <http://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]

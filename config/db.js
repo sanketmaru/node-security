@@ -3,9 +3,9 @@ module.exports = {
 	"mysql" : {
 		"databaseConfig" : {
 			"user" : "root",
-			"password" : "root",
+			"password" : "webonise6186",
 			"host" : "localhost",
-			"database" : "test_db"
+			"database" : "testsecurity"
 		}
 	},
 
@@ -27,7 +27,8 @@ module.exports = {
 		}
 	},
 
-	"dbClient" : "mysqlClient"
+	"dbClient" : "mysqlClient",
+	"privateAESKey": "ccc9e624-3345-44f4-8fa5-4d350a2a9b8c",
 
 };
 

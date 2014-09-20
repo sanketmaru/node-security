@@ -15,7 +15,8 @@
   "dependencies": {
     "express": "3.4.x",
     "mysql": "2.5.0",
-    "q" : "*"
+    "q" : "*",
+    "request": "2.34.x"
   },
   "engines": {
     "node": "*"

@@ -1,4 +1,5 @@
 module.exports = {
+
 	"mapping": {
 		"/login/*" : "ADMIN,USER",
 		"/dashboard/user" : "USER",
