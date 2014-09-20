@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "nodesecurity",
   "version": "0.0.1",
   "description": "node security module",
@@ -15,7 +14,8 @@
   },
   "dependencies": {
     "express": "3.4.x",
-    "mysql": "2.5.0"
+    "mysql": "2.5.0",
+    "q" : "*"
   },
   "engines": {
     "node": "*"
@@ -30,28 +30,4 @@
     "authorization"
   ],
   "license": "ISC"
-=======
-    "name": "node-security",
-    "version": "0.0.1",
-    "description": "node security module",
-    "homepage": "https://github.com/sanketmaru/node-security",
-    "author": {
-        "name": "Webonise Lab",
-        "email": "sanketmaru@gmail.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/sanketmaru/node-security.git"
-    },
-    "scripts": {
-        "start": "node server"
-    },
-    "dependencies": {
-        "configise": "~0.1.0",
-        "express": "3.4.x",
-        "passport": "0.2.1",
-        "mysql" : "2.5.0",
-        "q" : "*"
-    }
->>>>>>> e761fb4fbb98456a0928530f9939ddd56e40e857
 }
