@@ -1,5 +1,8 @@
-var express = require('express'),
- p = require('passport'),
+var express = require('express');
+/*var DBConfig = require('./config/db');
+var rolesConfig = require('./config/roles');
+GLOBAL.DBConfig = DBConfig;
+GLOBAL.rolesConfig = rolesConfig;*/
 newMod = require('./lib');
 var app = express();
 
