@@ -13,7 +13,7 @@ module.exports = {
 		"databaseConfig" : {
 			"user" : "root",
 			"password" : "sql",
-			"host" : "localhost:9000",
+			"host" : "localhost",
 			"database" : "testsecurity"
 		}
 	},
@@ -22,7 +22,7 @@ module.exports = {
 		"databaseConfig" : {
 			"user" : "root",
 			"password" : "sql",
-			"host" : "localhost:9000",
+			"host" : "localhost",
 			"database" : "testsecurity"
 		}
 	},
