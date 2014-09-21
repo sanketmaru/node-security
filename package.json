@@ -1,6 +1,6 @@
 {
   "name": "nodesecurity",
-  "version": "0.0.1",
+  "cd ": "0.0.2",
   "description": "node security module",
   "homepage": "https://github.com/sanketmaru/node-security",
   "author": "Webonise Lab <sanketmaru@gmail.com>",
@@ -13,7 +13,6 @@
     "start": "node server"
   },
   "dependencies": {
-    "express": "3.4.x",
     "mysql": "2.5.0",
     "q" : "*",
     "request": "2.34.x"
