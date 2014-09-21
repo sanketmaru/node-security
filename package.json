@@ -1,6 +1,6 @@
 {
   "name": "nodesecurity",
-  "cd ": "0.0.2",
+  "cd ": "0.0.3",
   "description": "node security module",
   "homepage": "https://github.com/sanketmaru/node-security",
   "author": "Webonise Lab <sanketmaru@gmail.com>",
