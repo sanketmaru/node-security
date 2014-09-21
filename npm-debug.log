@@ -1,111 +1,26 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/bin/npm', 'publish' ]
+1 verbose cli [ 'node', '/usr/bin/npm', 'publish', '-f' ]
 2 info using npm@2.0.0
 3 info using node@v0.10.31
 4 verbose node symlink /usr/bin/node
-5 verbose publish [ '.' ]
-6 verbose cache add [ '.', null ]
-7 verbose cache add spec="." args=[".",null]
-8 verbose parsed spec { raw: '.',
-8 verbose parsed spec   scope: null,
-8 verbose parsed spec   name: null,
-8 verbose parsed spec   rawSpec: '.',
-8 verbose parsed spec   spec: '/home/webonise/geekhours/node-security',
-8 verbose parsed spec   type: 'local' }
-9 verbose cache add local package /home/webonise/geekhours/node-security
-10 silly lockFile 3a52ce78- .
-11 verbose lock . /home/webonise/.npm/3a52ce78-.lock
-12 verbose tar pack [ '/home/webonise/.npm/nodesecurity/0.0.1/package.tgz', '.' ]
-13 verbose tarball /home/webonise/.npm/nodesecurity/0.0.1/package.tgz
-14 verbose folder .
-15 info prepublish nodesecurity@0.0.1
-16 silly lockFile 1f1177db-tar tar://.
-17 verbose lock tar://. /home/webonise/.npm/1f1177db-tar.lock
-18 silly lockFile 3925bc02-m-nodesecurity-0-0-1-package-tgz tar:///home/webonise/.npm/nodesecurity/0.0.1/package.tgz
-19 verbose lock tar:///home/webonise/.npm/nodesecurity/0.0.1/package.tgz /home/webonise/.npm/3925bc02-m-nodesecurity-0-0-1-package-tgz.lock
-20 silly lockFile 1f1177db-tar tar://.
-21 silly lockFile 1f1177db-tar tar://.
-22 silly lockFile 3925bc02-m-nodesecurity-0-0-1-package-tgz tar:///home/webonise/.npm/nodesecurity/0.0.1/package.tgz
-23 silly lockFile 3925bc02-m-nodesecurity-0-0-1-package-tgz tar:///home/webonise/.npm/nodesecurity/0.0.1/package.tgz
-24 silly lockFile eb3fb364-e-npm-nodesecurity-0-0-1-package /home/webonise/.npm/nodesecurity/0.0.1/package
-25 verbose lock /home/webonise/.npm/nodesecurity/0.0.1/package /home/webonise/.npm/eb3fb364-e-npm-nodesecurity-0-0-1-package.lock
-26 silly lockFile eb3fb364-e-npm-nodesecurity-0-0-1-package /home/webonise/.npm/nodesecurity/0.0.1/package
-27 silly lockFile eb3fb364-e-npm-nodesecurity-0-0-1-package /home/webonise/.npm/nodesecurity/0.0.1/package
-28 silly lockFile 3a52ce78- .
-29 silly lockFile 3a52ce78- .
-30 silly publish { name: 'nodesecurity',
-30 silly publish   version: '0.0.1',
-30 silly publish   description: 'node security module',
-30 silly publish   homepage: 'https://github.com/sanketmaru/node-security',
-30 silly publish   author: { name: 'Webonise Lab', email: 'sanketmaru@gmail.com' },
-30 silly publish   main: 'lib/index',
-30 silly publish   repository:
-30 silly publish    { type: 'git',
-30 silly publish      url: 'git://github.com/sanketmaru/node-security.git' },
-30 silly publish   scripts: { start: 'node server' },
-30 silly publish   dependencies: { express: '3.4.x', mysql: '2.5.0', q: '*', request: '2.34.x' },
-30 silly publish   engines: { node: '*' },
-30 silly publish   bugs: { url: 'https://github.com/sanketmaru/node-security/issues' },
-30 silly publish   devDependencies: {},
-30 silly publish   keywords: [ 'security', 'authentication', 'authorization' ],
-30 silly publish   license: 'ISC',
-30 silly publish   readme: 'node-security\n=============\n\nNode Security Application which will bootstrap a node js application in seconds and ready with a login features.\n',
-30 silly publish   readmeFilename: 'README.md',
-30 silly publish   gitHead: '16620f6486b2bc5d092003a227c544426942baf5',
-30 silly publish   _id: 'nodesecurity@0.0.1',
-30 silly publish   _shasum: '3dc08f4e2645d01ae222cf2e5154f1537d633dbe',
-30 silly publish   _from: '.' }
-31 verbose mapToRegistry name nodesecurity
-32 verbose mapToRegistry uri https://registry.npmjs.org/nodesecurity
-33 verbose publish registryBase https://registry.npmjs.org/
-34 verbose request on initialization, where is /nodesecurity
-35 verbose request after pass 1, where is /nodesecurity
-36 verbose request url raw /nodesecurity
-37 verbose request resolving registry [ 'https://registry.npmjs.org/', './nodesecurity' ]
-38 verbose request after pass 2, where is https://registry.npmjs.org/nodesecurity
-39 verbose request sending authorization for write operation
-40 info attempt registry request try #1 at 05:14:31
-41 verbose request id c2f3bd12b32fa19f
-42 http request PUT https://registry.npmjs.org/nodesecurity
-43 http 403 https://registry.npmjs.org/nodesecurity
-44 verbose headers { date: 'Sat, 20 Sep 2014 23:44:29 GMT',
-44 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
-44 verbose headers   'content-type': 'application/json',
-44 verbose headers   'cache-control': 'max-age=60',
-44 verbose headers   'content-length': '2675',
-44 verbose headers   'accept-ranges': 'bytes',
-44 verbose headers   via: '1.1 varnish',
-44 verbose headers   'x-served-by': 'cache-syd1622-SYD',
-44 verbose headers   'x-cache': 'MISS',
-44 verbose headers   'x-cache-hits': '0',
-44 verbose headers   'x-timer': 'S1411256669.494709,VS0,VE192',
-44 verbose headers   'keep-alive': 'timeout=10, max=50',
-44 verbose headers   connection: 'Keep-Alive' }
-45 error publish Failed PUT 403
-46 verbose stack Error: forbidden cannot modify pre-existing version: 0.0.1
-46 verbose stack old={"name":"nodesecurity","version":"0.0.1","description":"node security module","homepage":"https://github.com/sanketmaru/node-security","author":{"name":"Webonise Lab","email":"sanketmaru@gmail.com"},"main":"lib/index","repository":{"type":"git","url":"git://github.com/sanketmaru/node-security.git"},"scripts":{"start":"node server"},"dependencies":{"express":"3.4.x","mysql":"2.5.0","q":"*"},"engines":{"node":"*"},"bugs":{"url":"https://github.com/sanketmaru/node-security/issues"},"devDependencies":{},"keywords":["security","authentication","authorization"],"license":"ISC","gitHead":"bc92d4086e3d71f62e6954cb95a5455545db1b03","_id":"nodesecurity@0.0.1","_shasum":"e85efdf6d8a9763fb5e6a953a03439f2f8e45ad0","_from":".","_npmVersion":"2.0.0","_npmUser":{"name":"priyankabhoir","email":"priyanka.bhoir@rocketmail.com"},"maintainers":[{"name":"priyankabhoir","email":"priyanka.bhoir@rocketmail.com"}],"dist":{"shasum":"e85efdf6d8a9763fb5e6a953a03439f2f8e45ad0","tarball":"http://registry.npmjs.org/nodesecurity/-/nodesecurity-0.0.1.tgz"}}
-46 verbose stack new={"name":"nodesecurity","version":"0.0.1","description":"node security module","homepage":"https://github.com/sanketmaru/node-security","author":{"name":"Webonise Lab","email":"sanketmaru@gmail.com"},"main":"lib/index","repository":{"type":"git","url":"git://github.com/sanketmaru/node-security.git"},"scripts":{"start":"node server"},"dependencies":{"express":"3.4.x","mysql":"2.5.0","q":"*","request":"2.34.x"},"engines":{"node":"*"},"bugs":{"url":"https://github.com/sanketmaru/node-security/issues"},"devDependencies":{},"keywords":["security","authentication","authorization"],"license":"ISC","readme":"node-security\u000a=============\u000a\u000aNode Security Application which will bootstrap a node js application in seconds and ready with a login features.\u000a","readmeFilename":"README.md","gitHead":"16620f6486b2bc5d092003a227c544426942baf5","_id":"nodesecurity@0.0.1","_shasum":"3dc08f4e2645d01ae222cf2e5154f1537d633dbe","_from":".","_npmVersion":"2.0.0","_npmUser":{"name":"priyankabhoir","email":"priyanka.bhoir@rocketmail.com"},"maintainers":[{"name":"priyankabhoir","email":"priyanka.bhoir@rocketmail.com"}],"dist":{"shasum":"3dc08f4e2645d01ae222cf2e5154f1537d633dbe","tarball":"http://registry.npmjs.org/nodesecurity/-/nodesecurity-0.0.1.tgz"}}: nodesecurity
-46 verbose stack     at RegClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:261:14)
-46 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:198:65)
-46 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:236:22)
-46 verbose stack     at Request.emit (events.js:98:17)
-46 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1142:14)
-46 verbose stack     at Request.emit (events.js:117:20)
-46 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1096:12)
-46 verbose stack     at IncomingMessage.emit (events.js:117:20)
-46 verbose stack     at _stream_readable.js:943:16
-46 verbose stack     at process._tickCallback (node.js:419:13)
-47 verbose statusCode 403
-48 verbose pkgid nodesecurity
-49 verbose cwd /home/webonise/geekhours/node-security
-50 error Linux 3.5.0-54-generic
-51 error argv "node" "/usr/bin/npm" "publish"
-52 error node v0.10.31
-53 error npm  v2.0.0
-54 error code E403
-55 error forbidden cannot modify pre-existing version: 0.0.1
-55 error old={"name":"nodesecurity","version":"0.0.1","description":"node security module","homepage":"https://github.com/sanketmaru/node-security","author":{"name":"Webonise Lab","email":"sanketmaru@gmail.com"},"main":"lib/index","repository":{"type":"git","url":"git://github.com/sanketmaru/node-security.git"},"scripts":{"start":"node server"},"dependencies":{"express":"3.4.x","mysql":"2.5.0","q":"*"},"engines":{"node":"*"},"bugs":{"url":"https://github.com/sanketmaru/node-security/issues"},"devDependencies":{},"keywords":["security","authentication","authorization"],"license":"ISC","gitHead":"bc92d4086e3d71f62e6954cb95a5455545db1b03","_id":"nodesecurity@0.0.1","_shasum":"e85efdf6d8a9763fb5e6a953a03439f2f8e45ad0","_from":".","_npmVersion":"2.0.0","_npmUser":{"name":"priyankabhoir","email":"priyanka.bhoir@rocketmail.com"},"maintainers":[{"name":"priyankabhoir","email":"priyanka.bhoir@rocketmail.com"}],"dist":{"shasum":"e85efdf6d8a9763fb5e6a953a03439f2f8e45ad0","tarball":"http://registry.npmjs.org/nodesecurity/-/nodesecurity-0.0.1.tgz"}}
-55 error new={"name":"nodesecurity","version":"0.0.1","description":"node security module","homepage":"https://github.com/sanketmaru/node-security","author":{"name":"Webonise Lab","email":"sanketmaru@gmail.com"},"main":"lib/index","repository":{"type":"git","url":"git://github.com/sanketmaru/node-security.git"},"scripts":{"start":"node server"},"dependencies":{"express":"3.4.x","mysql":"2.5.0","q":"*","request":"2.34.x"},"engines":{"node":"*"},"bugs":{"url":"https://github.com/sanketmaru/node-security/issues"},"devDependencies":{},"keywords":["security","authentication","authorization"],"license":"ISC","readme":"node-security\u000a=============\u000a\u000aNode Security Application which will bootstrap a node js application in seconds and ready with a login features.\u000a","readmeFilename":"README.md","gitHead":"16620f6486b2bc5d092003a227c544426942baf5","_id":"nodesecurity@0.0.1","_shasum":"3dc08f4e2645d01ae222cf2e5154f1537d633dbe","_from":".","_npmVersion":"2.0.0","_npmUser":{"name":"priyankabhoir","email":"priyanka.bhoir@rocketmail.com"},"maintainers":[{"name":"priyankabhoir","email":"priyanka.bhoir@rocketmail.com"}],"dist":{"shasum":"3dc08f4e2645d01ae222cf2e5154f1537d633dbe","tarball":"http://registry.npmjs.org/nodesecurity/-/nodesecurity-0.0.1.tgz"}}: nodesecurity
-56 error If you need help, you may report this error at:
-56 error     <http://github.com/npm/npm/issues>
-57 verbose exit [ 1, true ]
+5 warn using --force I sure hope you know what you are doing.
+6 verbose publish [ '.' ]
+7 verbose stack Error: No version provided
+7 verbose stack     at needVersion (/usr/lib/node_modules/npm/lib/publish.js:134:40)
+7 verbose stack     at /usr/lib/node_modules/npm/lib/publish.js:38:10
+7 verbose stack     at /usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:51:40
+7 verbose stack     at final (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:349:17)
+7 verbose stack     at then (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:126:33)
+7 verbose stack     at /usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:331:40
+7 verbose stack     at evalmachine.<anonymous>:271:14
+7 verbose stack     at /usr/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:102:5
+7 verbose stack     at Object.oncomplete (evalmachine.<anonymous>:107:15)
+8 verbose cwd /home/webonise/geekhours/node-security
+9 error Linux 3.5.0-54-generic
+10 error argv "node" "/usr/bin/npm" "publish" "-f"
+11 error node v0.10.31
+12 error npm  v2.0.0
+13 error No version provided
+14 error If you need help, you may report this error at:
+14 error     <http://github.com/npm/npm/issues>
+15 verbose exit [ 1, true ]

@@ -1,13 +1,15 @@
 var express = require('express');
-var DBConfig = require('./config/db');
-var rolesConfig = require('./config/roles');
+var DBConfig = require('./sampleconfig/sampledb');
+var rolesConfig = require('./sampleconfig/sampleroles');
 GLOBAL.DBConfig = DBConfig;
 GLOBAL.rolesConfig = rolesConfig;
-newMod = require('./lib');
+var newMod = require('nodesecurity');
+var cookieParser = require('cookie-parser');
+var session = require('express-session');
 var app = express();
 
-app.use(express.cookieParser());
-app.use(express.session({secret: 'xyz'}));
+app.use(cookieParser());
+app.use(session({secret: 'xyz'}));
 
 app.get('/login', newMod.signIn, function(req, res){
 	res.jsonp({
