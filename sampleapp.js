@@ -3,13 +3,14 @@ var DBConfig = require('./sampleconfig/sampledb');
 var rolesConfig = require('./sampleconfig/sampleroles');
 GLOBAL.DBConfig = DBConfig;
 GLOBAL.rolesConfig = rolesConfig;
-var newMod = require('nodesecurity');
-var cookieParser = require('cookie-parser');
+var newMod = require('./lib');
+/*var cookieParser = require('cookie-parser');
 var session = require('express-session');
+*/
 var app = express();
 
-app.use(cookieParser());
-app.use(session({secret: 'xyz'}));
+app.use(express.cookieParser());
+app.use(express.session({secret: 'xyz'}));
 
 app.get('/login', newMod.signIn, function(req, res){
 	res.jsonp({
